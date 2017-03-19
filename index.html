@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>蛇窝</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  
+  
+  <meta name="description" content="他往往会说，魔鬼总是随心所欲地引用经文。他记得从前一个先令就能买到十三只上等的牡蛎。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="蛇窝">
+<meta property="og:url" content="http://lonelylonelygod.github.io/index.html">
+<meta property="og:site_name" content="蛇窝">
+<meta property="og:description" content="他往往会说，魔鬼总是随心所欲地引用经文。他记得从前一个先令就能买到十三只上等的牡蛎。">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="蛇窝">
+<meta name="twitter:description" content="他往往会说，魔鬼总是随心所欲地引用经文。他记得从前一个先令就能买到十三只上等的牡蛎。">
+  
+    <link rel="alternate" href="/atom.xml" title="蛇窝" type="application/atom+xml">
+  
+  <link rel="icon" href="/css/images/mylogo.jpg">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script src="/js/jquery-3.1.1.min.js"></script>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.css" >
+
+  
+    <link rel="stylesheet" href="/css/home.css" >
+  
+
+  
+
+  
+
+</head>
+
+
+
+  <body>
+
+
+  
+    <header id="header">
+
+  
+    <div id="intrologo" class="intro-logo">
+  
+
+    <canvas width="100%" height="100%"></canvas>
+    <script>
+      var c = document.getElementsByTagName('canvas')[0],
+          x = c.getContext('2d'),
+          w = window.innerWidth,
+          h = window.innerHeight,
+          pr = window.devicePixelRatio || 1,
+          f = 90,
+          q,
+          m = Math,
+          r = 0,
+          u = m.PI*2,
+          v = m.cos,
+          z = m.random
+      c.width = w*pr
+      c.height = h*pr
+      x.scale(pr, pr)
+      x.globalAlpha = 0.6
+
+      
+        function i(){
+            x.clearRect(0,0,w,h)
+            q=[{x:0,y:h*.7+f},{x:0,y:h*.7-f}]
+            while(q[1].x<w+f) d(q[0], q[1])
+        }
+        function d(i,j){   
+            x.beginPath()
+            x.moveTo(i.x, i.y)
+            x.lineTo(j.x, j.y)
+            var k = j.x + (z()*2-0.25)*f,
+                n = y(j.y)
+            x.lineTo(k, n)
+            x.closePath()
+            r-=u/-50
+            x.fillStyle = '#'+(v(r)*127+128<<16 | v(r+u/3)*127+128<<8 | v(r+u/3*2)*127+128).toString(16)
+            x.fill()
+            q[0] = q[1]
+            q[1] = {x:k,y:n}
+        }
+        function y(p){
+            var t = p + (z()*2-1.1)*f
+            return (t>h||t<0) ? y(p) : t
+        }
+        document.getElementById("intrologo").onclick = i
+        document.getElementById("intrologo").ontouchstart = i
+        i()
+      
+    </script>
+    
+
+    
+      <div id="homelogo" class="homelogo"> 
+    
+
+        
+          <div class="homelogoback" >
+            <h1><a href="#content" id="logo">蛇窝</a></h1>
+            <h3>他往往会说，魔鬼总是随心所欲地引用经文。他记得从前一个先令就能买到十三只上等的牡蛎。</h3>
+            <h5>老蛇</h5>
+            <!-- <p><a href="https://github.com/iTimeTraveler" target="_blank">Github</a></p> -->
+          </div>
+        
+    
+    </div>
+  </div>
+
+  <!-- 自适应主页背景大图 -->
+  
+
+ <!-- home_logo_image居中 -->
+ 
+    <script>
+        var homelogodiv = document.getElementById("homelogo");
+        if (document.all.homelogo.offsetWidth > document.body.clientWidth) {
+          homelogodiv.style.width = document.body.clientWidth + "px";
+          homelogodiv.style.marginLeft = document.body.clientWidth * -0.5 + "px";
+        } else {
+          homelogodiv.style.width = homelogodiv.clientWidth  + "px";
+          homelogodiv.style.marginLeft = (homelogodiv.clientWidth)  * -0.5 + "px";
+        }
+    </script>
+  
+
+  <div class="intro-navigate">
+      <p class="navigater-list">
+        
+          <a id="beautifont" class="main-nav-link" href="/">Startseite</a>
+        
+      </p>
+  </div>
+
+</header>
+  
+  <div id="container">
+    <div id="wrap">
+      
+            
+      <div id="content" class="outer">
+        
+          <section id="main" style="float:none;">
+  
+    <article id="post-孤独的运动们"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2017/03/19/孤独的运动们/">孤独的运动们</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2017/03/19/孤独的运动们/" class="article-date">
+	  <time datetime="2017-03-19T04:45:20.000Z" itemprop="datePublished">2017-03-19</time>
+	</a>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Pain-is-inevitable-suffering-is-optional"><a href="#Pain-is-inevitable-suffering-is-optional" class="headerlink" title="Pain is inevitable, suffering is optional."></a>Pain is inevitable, suffering is optional.</h2><h3 id="瑜伽"><a href="#瑜伽" class="headerlink" title="瑜伽"></a>瑜伽</h3><p>练习瑜伽三年，中途有过停顿。</p>
+<p>瑜伽是安静寂寞的运动。独自。缓慢。疼痛。却又大汗淋漓。吸气沉肩向远处拉伸，呼气缓慢下沉。平稳吸气，平稳呼气。肌肉的疼痛。身体的抖动。都只有自己能够体会。身体专注于内在的疼痛，在疼痛中努力保持呼吸顺畅，步履稳定，全神贯注，完全无暇顾及其他生活琐事。思维变得到放空。</p>
+<p>上课和独自练习，又有不同。</p>
+<p>有好几个印度籍的老师。都是男子。在古代，传统瑜伽是为男性设计，而在当代印度，瑜伽修行者男性也居多数。大师多为男性。练习到现在，也愈发觉得，突破身体基础柔韧，男性的肌肉强度和持久力的确更适合瑜伽。</p>
+<p>和老师交谈。都是从小修习瑜伽，并节制饮食。晚餐吃得简略清淡，颇有种中国佛教的味道。有着漂亮的肌肉线条，内敛的。不似健身教练般大块得炫目。很有力量。眼神简洁坚定。</p>
+<p>我的瑜伽学习总伴随着后知后觉和恍然大悟。</p>
+<p>小时候爱跳舞，或许因为此，柔韧性尚可。刚上课不久，我的倔强开始折磨自己。不断的挑战高难度的瑜伽动作。咋一看一字马耀眼无比，实际东施效颦一般，完全不得要领的乱来。跌跌撞撞半年后，才晓得我是呼吸混乱，平衡差得可以，腰部太软导致塌腰严重，又一味拉伸，不懂正确运用肌肉，膝盖常常锁死。</p>
+<p>意识到这些问题后，又有幸被老师单独指点更改，才算是入了门。</p>
+<p>而后又过小半年，因为时间安排的关系，瑜伽课被所谓的又重要又紧迫的事件拉下日程表。我的三分钟热情，完全把瑜伽忘在脑后。只偶尔象征性的翻出垫子，拉扯拉扯。</p>
+<p>直到去年年末。需参加一个瑜伽表演。</p>
+<p>表演的日子迫在眉睫，懒惰拖延的我迟迟不愿行动。隔了许久未练习，身体已经硬成了一块铁。瑜伽就是这样实在的运动。需要持续的付出，长久的，稳定的练习。才能在这每日积累的疼痛中，得到微小进步。而懒惰两日，一切又得重头开始。</p>
+<p>肌肉也是爱偷懒的物种。</p>
+<p>于是我毫无办法。迫于表演的压力，开始了每日例行瑜伽。</p>
+<p>起床，喝一杯水。便开始瑜伽。从呼吸开始。然后是最不擅长的平衡。接着是腰腹的半月式。而后鹰式，三角式等。时间充裕再做两轮简单的拜日。最后以树式结尾。</p>
+<p>自己练习，没有老师在旁边指导，便要记得动作的连贯衔接。身体就从被动告知转为主动。一个动作失败了。不要紧。还能再来一次。我于是能够充分训练自己的缺陷。可另一方面，由于没有了老师在旁的压力，身体的疼痛趋势自己缩短保持动作的时间。只好靠数数字来自我勉强。常常忍受到数到十，腿都颤抖。</p>
+<p>有时候开着音乐。到后来又喜欢完全安静。安静得听得到呼吸的声音。气体从鼻腔吸入肺里，在身体中形成叮咚叮咚的节奏。</p>
+<p>专注的时候,流淌的节奏蔓延开.简单如伸直手臂,都会感受到像有根细线牵引着,从肩膀拉伸到中指指尖,够向远方.脚掌扎实地踩在地面上。有一种蹂入地板的安全感。</p>
+<p>这样的感受很奇妙.像是内心的馈赠一般.只有足够专注,才能感受到.如果只是随意的伸展，身体也只会随意的回报自己.</p>
+<p>做完一套最基本的动作。常常是17分钟。像在身体内部安装了计时器。精准得吓人。有时会想到村上春树的《1Q84》，描写女主人公青豆。每天播放雅那切克的《小交响乐》，大约二十五分钟。期间，做一套固定动作。将每一寸肌肉伸展到到近乎极限的状态。他写道，就像被绞干的抹布一般。</p>
+<p>经历过蜜月期，平稳期，厌烦期和焦躁期，这个执拗的运动。终于揉入了生命里。</p>
+<h3 id="游泳"><a href="#游泳" class="headerlink" title="游泳"></a>游泳</h3><p>一年前，开始游泳。</p>
+<p>游泳总是有种或深或浅的忍受感。</p>
+<p>刚开始，蹩脚的换气，忍受着呛水的痛苦感。反复的失败又反复的承受。学会基本动作后。便是对距离的忍受。初学游泳。肌肉不得要领。游上10米就让我筋疲力尽。然后教我的朋友说。游泳就是不断的忍受和突破。这次游十米，停下来休息，下次再努力游上15米。只有在忍受中，才能进步。</p>
+<p>每一次距离的延伸，对身体来说都是未知区域的挑战。区区十米已经是我极限，再往前便是极限边缘的挑战。每延长一段，都是在忍受和痛苦中度过。有时候面对遥远的对岸，觉得无比恐惧。我已经一点力气也没有了。还要在这寂寞的，空荡的水里挣扎着。泳池又这样深。</p>
+<p>终于能完整游完25米泳道后。我便开始试图提高整个游泳长度。计数是枯燥麻烦的工作。25的泳池，要往返20圈。才只一千米。在量的累计中。我有时会观察周围的泳者，有时想想琐事。但更多的时候。大脑一片空白。在水里。听不到外面的声音。更无法交谈。我只和我自己在一起。说不清是因为身体摆动所以形成惯性，还是惯性让身体不断前行。我像一个机器。身体脱离脑部支配。只会摆动，向前。</p>
+<p>总是游一千米或者一千两百米。一个小时的运动量，让低血糖的自己不至于跃出水面，两眼一抹黑。每周最少两次。比面膜频率都规律。</p>
+<p>某次，状态很好。在50米的泳池里。游了大概两千米。身体在游过一千四百米后，疲惫感瞬间消失了。仿佛我只剩下一个灵魂，在这泳池扑动的身体于我毫无关系。她是一个永动机，我是一个在岸边喝奶茶晒太阳的路人甲。我看着她，嚼着软糯的珍珠粒。这样的感觉又奇妙又恐怖。我决定停下来。即使毫无疲惫感。</p>
+<p>出水面。湿漉漉的泳衣比平常感觉重了一些。双腿有一种轻松的绵软。我慢慢的踱回休息室。吃一颗洗干净的苹果。</p>
+<p>苹果咬开，甜美的汁水被牙齿挤压，迸慢整个口腔。舌尖像是多长出一层柔软的触角，摇曳得摆动着，敏感得吓人。仿佛一个贪婪的小寡妇，微微颤抖。</p>
+<p>吃完了。我抓着果核，回味了很久。</p>
+<p>现在想起来，都是，哇，好美味。</p>
+<h3 id="走及跑步"><a href="#走及跑步" class="headerlink" title="走及跑步"></a>走及跑步</h3><p>时不时会想走一走。</p>
+<p>从家走到附近公园。再走回来。往返6公里。走50分钟。可以听完一整本简易外语原著的音频。或者听大概30篇英文课文，或者20篇日文新闻。有时候很专注的走。注意脚下的盲道和周围的车辆还有对面的行人。以及楼栋里蹿出来的嗷嗷大叫的宠物狗。更多时候是专注的听。眼睛看向远方，并不知道焦距在哪里。眼前的画面仿佛蒙上一层薄膜，默然机械的避开障碍物。血液集中在双耳还不够熟练的句子和单词。偶尔倒回去重听。</p>
+<p>所以确切的说，走路更多的成为我学外语的辅助工具。</p>
+<p>再说跑步。</p>
+<p>很讨厌跑步。又很下手。在生命中的无数阶段都有过给跑步的三分钟热情。又无数次消退。可还是会有一搭没一搭的跑。</p>
+<p>跑步和游泳一样，都是释放悲伤的绝佳运动。没有人分的清我脸上的是泪水还是汗水。连尝起来都同样有咸味。瑜伽的冥想，需排除杂念，只专注呼吸。是件极为困难的事。我总是游离出去。不做比做要难的多。而剧烈的肢体运动会给人一种空白。跑步为甚。在这难得的空白里，大脑缓存得到释放。而摆动双腿获得的速度感，大过坐上副驾驶来秀车技的呼啸声。</p>
+<p>奔跑中，会有野性的错觉。这高楼林立，就是原始森林，奔跑是争夺也是逃避。这本身就是一场厮杀。保持身体的活力，是我求生的底线。</p>
+<p>跑完，总有一种自暴自弃的快感。</p>
+<p> &nbsp;</p>
+<p>这么回想起来。非团体类的运动大都是孤独的。</p>
+<p>对懒惰的自己而言，这孤独使得连执行都必须充满自律。</p>
+<p>某种程度上，我是唯物的。长时间的伏案学习需要运动才能破解沾满全身的昏倦气息。而这种运动产生的安多酚素所带来的快感只能保持48个小时。身体对这种快感上瘾，在安多酚素分泌不足后坐立不安，我被这激素推动着，终于换上衣裳出门去。</p>
+<p>在整个运动过程中，我既是施虐者，又是受虐者。是强迫者，又是被强迫者。两者结合在一起通向一种自我完结，又反过来抚慰自己。</p>
+<p>有时，常需要一些规律的事物来证明自己。比如早起。运动。日记。在我看来这是一种较为轻易获得正面能量的方式。回家后，空出大片时间自由利用。六点起床，出门走路，然后瑜伽，洗漱。早餐。再磨一杯咖啡。就这些。无需其他，我就可以在内心深处偷偷给自己画一个勾：今天又是一个nice day. 而这一天剩余的十来个小时，不管发生了什么，都很难轻易的改变这个美好一天的看法。我只需要早起，然后程序一般做这一切。美好就唾手可得。</p>
+<p>或许人与人之间需要互动般的肯定，而在缺少与人互动的日子里，我便用这种这种方式，在与自己互动。规律的事物变成肯定的指标。我便可以诚实的肯定或批评自己。</p>
+<p>写完了。瞧，我又去打上一个对号。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+
+
+</section>
+        
+      </div>
+      
+        <div align="center" style="margin-top: 30px;"><hr class="hr" style="margin:0px; height:3px;"></div>
+      
+      <footer id="footer">
+  
+
+  <div class="container">
+      	<div class="row">
+	      <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
+	      <p id="copyRightEn">Copyright &copy; 2013 - 2017 蛇窝 All Rights Reserved.</p>
+	      
+	      
+    		<p class="busuanzi_uv">
+				<span id="busuanzi_container_site_uv"> UV : <span id="busuanzi_value_site_uv"></span></span> |  
+				<span id="busuanzi_container_site_pv"> PV : <span id="busuanzi_value_site_pv"></span></span>
+		    </p>
+  		   
+		</div>
+
+		
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var wrapdiv = document.getElementById("wrap");
+    var contentdiv = document.getElementById("content");
+    var allheader = document.getElementById("allheader");
+
+    wrapdiv.style.minHeight = document.body.offsetHeight + "px";
+    if (allheader != null) {
+      contentdiv.style.minHeight = document.body.offsetHeight - allheader.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    } else {
+      contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    }
+</script>
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+</nav> -->
+    
+<div style="display: none;">
+  <script src="https://s11.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+</div>
+
+
+  <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+<script src="/js/bootstrap.js"></script>
+
+
+  <script src="/js/home.js"></script>
+
+
+
+
+
+
+
+
+  </div>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="myModalLabel">设置</h2>
+      </div>
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+
+
+      <div class="modal-body">
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" onclick="javascript:setFontSize();" aria-expanded="true" aria-controls="collapseOne">
+              正文字号大小
+            </a>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            您已调整页面字体大小
+          </div>
+        </div>
+      
+
+
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" onclick="javascript:setBackground();" aria-expanded="true" aria-controls="collapseTwo">
+              夜间护眼模式
+            </a>
+        </div>
+          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body">
+            夜间模式已经开启，再次单击按钮即可关闭 
+          </div>
+        </div>
+
+        <div>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关 于&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        </div>
+         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="panel-body">
+            蛇窝
+          </div>
+          <div class="panel-body">
+            Copyright © 2017 老蛇 All Rights Reserved.
+          </div>
+        </div>
+      </div>
+
+
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <div class="modal-footer">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+      </div>
+    </div>
+  </div>
+</div>
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+  
+
+	<div style="display: none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+  </div>
+
+
+</body>
+</html>
